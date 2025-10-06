@@ -9,13 +9,26 @@ const Bottles = () => {
         .then(res => res.json())
         .then(data => setBottles(data))
     },[])
+
+     
+
+    const handleAddToCard = bottle =>{
+
+    }
+
     return (
         <div>
             <h3>Bottles Here: {bottles.length}</h3>
             <div className="bottles-container">
                 {
                 bottles.map(bottle => <Bottle
-                    key={bottle.id} bottle={bottle} ></Bottle>)
+
+                    key={bottle.id} 
+                    bottle={bottle}
+                    handleAddToCard={handleAddToCard}
+                     >
+
+                    </Bottle>)
             }
             </div>
             
