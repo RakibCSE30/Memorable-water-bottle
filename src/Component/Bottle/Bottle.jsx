@@ -6,7 +6,7 @@ const Bottle = ({bottle , handleAddToCart}) => {
         <div className='bottle-container'>
             <p><strong>Bottle: {name}</strong></p>
             <img src={img} alt="" />
-            <p>Price ${price}</p>
+            <p className=' bg-blue-200 ' >Price ${price}</p>
             <button onClick={() => handleAddToCart(bottle)}>Purchase</button>
         </div>
     );

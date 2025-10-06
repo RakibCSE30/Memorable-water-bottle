@@ -24,8 +24,8 @@ const Bottles = () => {
 
     return (
         <div>
-            <h3>Bottles Available: {bottles.length}</h3>
-            <h3>Bottle: {cart.length}</h3>
+            <h3 className="   ">Bottles Available: {bottles.length}</h3>
+            <h3 className=" text-black  " >Bottle: {cart.length}</h3>
             <div className="bottles-container">
                 {
                 bottles.map(bottle => <Bottle
